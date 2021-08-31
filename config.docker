@@ -16,7 +16,7 @@ FSVERITY_GIT=https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-u
 FSVERITY_COMMIT=bdebc45b4527d64109723ad5753fa514bac47c9f
 
 IMA_EVM_UTILS_GIT=git://git.code.sf.net/p/linux-ima/ima-evm-utils.git
-IMA_EVM_UTILS_COMMIT=0267fa16990fd0ddcc89984a8e55b27d43e80167
+IMA_EVM_UTILS_COMMIT=00a0e66a14d3663edd9d37c8a01db6d182c88bdd
 
 BLKTESTS_GIT=https://github.com/tytso/blktests.git
 

@@ -19,6 +19,7 @@ RUN apt-get update && \
 	    curl \
 	    gettext \
 	    git \
+	    libblkid-dev \
 	    libkeyutils-dev \
 	    libtool \
 	    libtool-bin \
@@ -37,9 +38,8 @@ RUN apt-get update && \
 
 MAINTAINER Theodore Y. Ts'o tytso@mit.edu
 
-COPY . /devel/xfstests-bld
-
-RUN cd /devel/xfstests-bld && \
+RUN git clone https://github.com/payes/xfstests-bld.git /devel/xfstests-bld/ && \
+    cd /devel/xfstests-bld && \
     cp config.docker config.custom && \
     make && \
     make tarball && \
@@ -56,9 +56,11 @@ RUN cd /devel/xfstests-bld && \
 	    autoconf \
 	    automake \
 	    autopoint \
+	    libblkid-dev \
 	    build-essential \
 	    gettext \
 	    git \
+	    libblkid-dev \
 	    libkeyutils-dev \
 	    libssl-dev \
 	    libtool \
